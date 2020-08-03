@@ -509,13 +509,7 @@ if [ -z "$SKIP_IPERF" ]; then
 	#   4. location and advertised speed link of the iperf server
 	#   5. network modes supported by the iperf server (IPv4 = IPv4-only, IPv4|IPv6 = IPv4 + IPv6, etc.)
 	IPERF_LOCS=( \
-		"bouygues.iperf.fr" "5200-5209" "Bouygues Telecom" "Paris, FR (10G)" "IPv4|IPv6" \
-		"ping.online.net" "5200-5209" "Online.net" "Paris, FR (10G)" "IPv4" \
-		"ping6.online.net" "5200-5209" "Online.net" "Paris, FR (10G)" "IPv6" \
-		"iperf.worldstream.nl" "5201-5201" "WorldStream" "The Netherlands (10G)" "IPv4|IPv6" \
-		"speedtest.wtnet.de" "5200-5209" "wilhelm.tel" "Hamburg, DE (10G)" "IPv4|IPv6" \
-		"iperf.biznetnetworks.com" "5201-5203" "Biznet" "Bogor, Indonesia (1G)" "IPv4" \
-		"speedtest.hostkey.ru" "5200-5203" "Hostkey" "Moscow, RU (1G)" "IPv4" \
+		"iperf.scottlinux.com" "5201-5203" "iperf.scottlinux.com" "Fremont, CA, US (1G)" "IPv4" \
 		"iperf3.velocityonline.net" "5201-5210" "Velocity Online" "Tallahassee, FL, US (10G)" "IPv4" \
 		"iperf.airstreamcomm.net" "5201-5205" "Airstream Communications" "Eau Claire, WI, US (10G)" "IPv4|IPv6" \
 		"iperf.he.net" "5201-5201" "Hurricane Electric" "Fremont, CA, US (10G)" "IPv4|IPv6" \
@@ -525,10 +519,10 @@ if [ -z "$SKIP_IPERF" ]; then
 	# (Online.net, WorldStream, and Hurricane Electric)
 	if [ ! -z "$REDUCE_NET" ]; then
 		IPERF_LOCS=( \
-			"ping.online.net" "5200-5209" "Online.net" "Paris, FR (10G)" "IPv4" \
-			"ping6.online.net" "5200-5209" "Online.net" "Paris, FR (10G)" "IPv6" \
-			"iperf.worldstream.nl" "5201-5201" "WorldStream" "The Netherlands (10G)" "IPv4|IPv6" \
-			"iperf.he.net" "5201-5201" "Hurricane Electric" "Fremont, CA, US (10G)" "IPv4|IPv6" \
+		"iperf.scottlinux.com" "5201-5203" "iperf.scottlinux.com" "Fremont, CA, US (1G)" "IPv4" \
+		"iperf3.velocityonline.net" "5201-5210" "Velocity Online" "Tallahassee, FL, US (10G)" "IPv4" \
+		"iperf.airstreamcomm.net" "5201-5205" "Airstream Communications" "Eau Claire, WI, US (10G)" "IPv4|IPv6" \
+		"iperf.he.net" "5201-5201" "Hurricane Electric" "Fremont, CA, US (10G)" "IPv4|IPv6" \
 		)
 	fi
 	
